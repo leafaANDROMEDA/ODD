@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D&D Notes Viewer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="source/CSS/navigation.css" />
+  <link rel="stylesheet" href="source/CSS/style.css" />
+  <link rel="stylesheet" href="source/CSS/markdown.css" />
+  <link rel="stylesheet" href="source/CSS/playerTag.css" />
+  <link rel="stylesheet" href="source/CSS/map.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="bg_glow" style="--x: 50; --y: 0; --cl: #ef010160"></div>
+  <header class="backLink">
+		<div class="header_block">
+		<img src="Images/page_ui/dungeons-and-dragons.png" alt="D&D Logo" id="logo"/>
+		<h1 id="main_header">Rise of the Empire</h1>
+	</div>
+  </header>
+	<main>
+		<aside id="sidebar">
+			<div class="Nav_Header">
+				<button id="toggle-sidebar">☰</button>
+				<h2>Navigation Menu</h2>
+			</div>
+			<div class="Nav_Body">
+				<ul class="collapsible-list">
+				</ul>
+			</div>
+		</aside>
+		<div class="content" id="content">
+			<div>
+				<hr>
+				<h1>Fennaniny nudesky</h1>
+					<div class="item">
+						<h2>Od koho:</h2>
+						<p>Nordius Ardan</p>
+					</div>
+					<div class="item">
+						<h2>Odměna:</h2>
+						<p>10000 zlatých</p>
+					</div>
+					<div class="item">
+						<h2>Do kdy:</h2>
+						<p>Včera bylo pozdě</p>
+					</div>
+					<div class="item">
+						<h2>Status:</h2>
+						<p>Urgentní</p>
+					</div>			
+				<div class="separator"></div>
+				<h2>Popis:</h2>
+				<p>Ardana už nebavý osamělé babičky v okolí a proto se rozhodl 
+					zavzpomínat na staré dobré časy když měl ještě Fennan. 
+			</div>
+		</div>
+	</main>
+
+
+
+  <!-- marked.js (Markdown → HTML) -->
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="source/JS/mapBuild.js"></script>
+  <script src="source/JS/controls.js"></script>
+  <script src="source/JS/parser.js"></script>
+  <script src="source/JS/block_builder.js"></script> 
+  <script src="source/JS/main.js"></script>
+
+
+  
+</body>
+</html>
